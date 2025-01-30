@@ -1,2 +1,5 @@
-# looking-for-the-inner-music
-An anonymous data repository associated with "Looking for the Inner Music: Probing LLMs' Understanding of Literary Style."
+# Data + Materials: *Looking for the Inner Music*: Probing LLMs' Understanding of Literary Style
+
+This repository contains the data and materials for the paper "*Looking for the Inner Music*: Probing LLMs' Understanding of Literary Style." 
+
+The data is all stored under the `Data` folder and is split into the materials used for the authorship attribution experiments (`Data/authorship_attribution`) and those used for the genre identification experiments (`Data/genre_identification`). The data released for each set of experiments includes the cleaned text file versions of each novel used to produce the data excerpts (in `clean_texts`), a CSV file containing all excerpts extracted from that dataset (in `all_{author, genre}_samples.csv`), and the splits used for training and evaluating all tested methods and models (in `splits`). The splits are separated into those used for training the decoder-only and the encoder-decoder models. These files are identical except for the formatting of the samples. The perturbed versions of the evaluation dataset samples are also included (in `eval_perturbations`).
